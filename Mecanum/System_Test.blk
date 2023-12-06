@@ -1,0 +1,476 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+<block type="procedures_defnoreturn" id="WtpyD@tEu+EoY=P9iY,D" deletable="false" x="65" y="2">
+<field name="NAME">runOpMode</field>
+<comment pinned="false" h="45" w="532">This function is executed when this Op Mode is selected from the Driver Station.</comment>
+<statement name="STACK">
+<block type="comment" id="Lc#BFtj*NTB48YL;eBl.">
+<field name="COMMENT">Put initialization blocks here.</field>
+<next>
+<block type="dcMotor_setProperty_RunMode" id="eP]7YEqNY_+YH.bca-UX">
+<field name="IDENTIFIER">leftFrontAsDcMotor</field>
+<field name="PROP">Mode</field>
+<data>{"IDENTIFIER":"leftFront"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_runMode" id="oZRd3}x[k+^Pp]k(9,iQ">
+<field name="RUN_MODE">STOP_AND_RESET_ENCODER</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_RunMode" id="#qeCtQYfHKrG7xD5|3B:">
+<field name="IDENTIFIER">leftFrontAsDcMotor</field>
+<field name="PROP">Mode</field>
+<data>{"IDENTIFIER":"leftFront"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_runMode" id="ZfMc{g|]=zS`G6A`nKQX">
+<field name="RUN_MODE">RUN_WITHOUT_ENCODER</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_RunMode" id="aP0WZ7;.[F_b2gx,*ZJ[">
+<field name="IDENTIFIER">rightFrontAsDcMotor</field>
+<field name="PROP">Mode</field>
+<data>{"IDENTIFIER":"rightFront"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_runMode" id=")PB(i%1$JHS$q`*7^I/u">
+<field name="RUN_MODE">STOP_AND_RESET_ENCODER</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_RunMode" id="3+{|{v)Pv|o39MYCCwG7">
+<field name="IDENTIFIER">rightFrontAsDcMotor</field>
+<field name="PROP">Mode</field>
+<data>{"IDENTIFIER":"rightFront"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_runMode" id="NfF]qg7!]IUK|Ejse1)A">
+<field name="RUN_MODE">RUN_WITHOUT_ENCODER</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_RunMode" id="z}KV}QKf+F,Mu1lY0r(Q">
+<field name="IDENTIFIER">leftRearAsDcMotor</field>
+<field name="PROP">Mode</field>
+<data>{"IDENTIFIER":"leftRear"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_runMode" id="]_%+U,GDk)myB6+4:C5B">
+<field name="RUN_MODE">STOP_AND_RESET_ENCODER</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_RunMode" id="Iqtbriy`qq^)UP_+?An}">
+<field name="IDENTIFIER">leftRearAsDcMotor</field>
+<field name="PROP">Mode</field>
+<data>{"IDENTIFIER":"leftRear"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_runMode" id="0Ij7diAk{(V/W4G+|SQu">
+<field name="RUN_MODE">RUN_WITHOUT_ENCODER</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_RunMode" id="S[c;|8JA9WgG[T%QCNtm">
+<field name="IDENTIFIER">rightRearAsDcMotor</field>
+<field name="PROP">Mode</field>
+<data>{"IDENTIFIER":"rightRear"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_runMode" id="3@C1Qk!d~w-{uJb%4O[9">
+<field name="RUN_MODE">STOP_AND_RESET_ENCODER</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_RunMode" id="#)a9w#e5a:91oJ#fmN?v">
+<field name="IDENTIFIER">rightRearAsDcMotor</field>
+<field name="PROP">Mode</field>
+<data>{"IDENTIFIER":"rightRear"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_runMode" id="a.kexiufg`O#j)vGaFN2">
+<field name="RUN_MODE">RUN_WITHOUT_ENCODER</field>
+</shadow>
+</value>
+<next>
+<block type="linearOpMode_waitForStart" id=":`$wN_ci`O;o6P0~.(+g">
+<next>
+<block type="dcMotor_setProperty_Direction" id="1?QY5|gN[*I?4w!e3F0i">
+<field name="IDENTIFIER">leftFrontAsDcMotor</field>
+<field name="PROP">Direction</field>
+<data>{"IDENTIFIER":"leftFront"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_direction" id=":lf`Jbb6e@`x#ZeGazqw">
+<field name="DIRECTION">REVERSE</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_Direction" id="Swq~o_$@`QU/:nxkM`2t">
+<field name="IDENTIFIER">leftRearAsDcMotor</field>
+<field name="PROP">Direction</field>
+<data>{"IDENTIFIER":"leftRear"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_direction" id="=@pbLw:-)9xBk@Rrl@$+">
+<field name="DIRECTION">REVERSE</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_Direction" id="1f[+OWT$V13hwyn`2ot/">
+<field name="IDENTIFIER">rightFrontAsDcMotor</field>
+<field name="PROP">Direction</field>
+<data>{"IDENTIFIER":"rightFront"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_direction" id="AK,(3MMDRwd2qE@VXI@u">
+<field name="DIRECTION">REVERSE</field>
+</shadow>
+</value>
+<next>
+<block type="controls_if" id="}Q?5mbxSO8Di;i!__6[y">
+<value name="IF0">
+<block type="linearOpMode_opModeIsActive" id=")o%YFX/#9kvv^sgXr4~5"/>
+</value>
+<statement name="DO0">
+<block type="controls_whileUntil" id="^0Kagy/e+Ea{rbZPv2G6">
+<field name="MODE">WHILE</field>
+<value name="BOOL">
+<block type="linearOpMode_opModeIsActive" id="e)cr{!2VIET83s,JWC.="/>
+</value>
+<statement name="DO">
+<block type="controls_if" id="Kk]^UOBE=F[~L@RIDd*|">
+<mutation else="1"/>
+<value name="IF0">
+<block type="gamepad_getProperty_Boolean" id="`E=($ct{]|m2`lUuoVa%">
+<field name="IDENTIFIER">gamepad1</field>
+<field name="PROP">X</field>
+<data>{"IDENTIFIER":"gamepad1"}</data>
+</block>
+</value>
+<statement name="DO0">
+<block type="dcMotor_setProperty_Number" id="P0vmzqy[i;aY7,dcy8v(">
+<field name="IDENTIFIER">leftFrontAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"leftFront"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="g]L|8lvNCj~Q`=8Kui@)">
+<field name="NUM">1</field>
+</shadow>
+</value>
+</block>
+</statement>
+<statement name="ELSE">
+<block type="dcMotor_setProperty_Number" id="$^k1qV=9/Q5?l|P8A[Rt">
+<field name="IDENTIFIER">leftFrontAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"leftFront"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="Ij%G**Fb{tm3eFIk4_6s">
+<field name="NUM">0</field>
+</shadow>
+</value>
+</block>
+</statement>
+<next>
+<block type="controls_if" id="%KT)96WF=/5k4[dtZ?Rg">
+<mutation else="1"/>
+<value name="IF0">
+<block type="gamepad_getProperty_Boolean" id="wv}xq#H@saDS,gLKEAZ%">
+<field name="IDENTIFIER">gamepad1</field>
+<field name="PROP">Y</field>
+<data>{"IDENTIFIER":"gamepad1"}</data>
+</block>
+</value>
+<statement name="DO0">
+<block type="dcMotor_setProperty_Number" id="k0kW%WI(i:(c4|hYM5h^">
+<field name="IDENTIFIER">rightFrontAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"rightFront"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="qbJ~e|VL`8lU:^2VRb+l">
+<field name="NUM">1</field>
+</shadow>
+</value>
+</block>
+</statement>
+<statement name="ELSE">
+<block type="dcMotor_setProperty_Number" id="I4EcbtF71Z8a7q[)?4d2">
+<field name="IDENTIFIER">rightFrontAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"rightFront"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="g9rfDeD/LS@:QP}b:tdv">
+<field name="NUM">0</field>
+</shadow>
+</value>
+</block>
+</statement>
+<next>
+<block type="controls_if" id="ML~#)*?{6L)VNc.?BrPN">
+<mutation else="1"/>
+<value name="IF0">
+<block type="gamepad_getProperty_Boolean" id="w/]=/b2ZNxb.Tc6nqju/">
+<field name="IDENTIFIER">gamepad1</field>
+<field name="PROP">A</field>
+<data>{"IDENTIFIER":"gamepad1"}</data>
+</block>
+</value>
+<statement name="DO0">
+<block type="dcMotor_setProperty_Number" id="RCWS_oNyHhQFf*81.qWH">
+<field name="IDENTIFIER">leftRearAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"leftRear"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="u|0%v;XBzaGE1d71ScZe">
+<field name="NUM">1</field>
+</shadow>
+</value>
+</block>
+</statement>
+<statement name="ELSE">
+<block type="dcMotor_setProperty_Number" id="%hUj~FoXI:u{aa8DnU^r">
+<field name="IDENTIFIER">leftRearAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"leftRear"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="qi=r[PUG62Vu0|Nku[?A">
+<field name="NUM">0</field>
+</shadow>
+</value>
+</block>
+</statement>
+<next>
+<block type="controls_if" id="f6bVX!d]M/HH!=c!W@DV">
+<mutation else="1"/>
+<value name="IF0">
+<block type="gamepad_getProperty_Boolean" id="$tk~8#yhWlUA//F6~=FK">
+<field name="IDENTIFIER">gamepad1</field>
+<field name="PROP">B</field>
+<data>{"IDENTIFIER":"gamepad1"}</data>
+</block>
+</value>
+<statement name="DO0">
+<block type="dcMotor_setProperty_Number" id="lR_8OVME7r#M:2t{dl~$">
+<field name="IDENTIFIER">rightRearAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"rightRear"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="a-jwteFL-VVWD3EIYY~7">
+<field name="NUM">1</field>
+</shadow>
+</value>
+</block>
+</statement>
+<statement name="ELSE">
+<block type="dcMotor_setProperty_Number" id="CD|T0uskApuX:+zRuRg{">
+<field name="IDENTIFIER">rightRearAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"rightRear"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="ZIB}`$zX[K.xyx8Cc`UI">
+<field name="NUM">0</field>
+</shadow>
+</value>
+</block>
+</statement>
+<next>
+<block type="telemetry_addNumericData_Number" id="Xdi^V7*YttzGFM`vJxcp">
+<value name="KEY">
+<shadow type="text" id="!ZwUkqh`1J(G[5iDUDlS">
+<field name="TEXT">LeftFront</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number" id="RC}-c?[2oPdRw(j^T*Ts">
+<field name="NUM">123</field>
+</shadow>
+<block type="dcMotor_getProperty_Number" id="N%Zdv{{[9lzp%eZYw:(d">
+<field name="IDENTIFIER">leftFrontAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"leftFront"}</data>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id=",Fwud!KPKjgvs1uj3{!x">
+<value name="KEY">
+<shadow type="text" id="Ku?s|Y-Ooui#+#!6o,#o">
+<field name="TEXT">LeftFront Position</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="dcMotor_getProperty_Number" id="AJ1?;;cpS7;tl{2ouy)+">
+<field name="IDENTIFIER">leftFrontAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"leftFront"}</data>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="J.1$I2}2C`0$OLj3mI}u">
+<value name="KEY">
+<shadow type="text" id="/.;/;Pv$,|)!(q5}V^X^">
+<field name="TEXT">RightFront</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number" id=".J,:y~nJJn7[SbWV}56Q">
+<field name="NUM">123</field>
+</shadow>
+<block type="dcMotor_getProperty_Number" id="|*aVw`Y71Vw@CY?7.mjT">
+<field name="IDENTIFIER">rightFrontAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"rightFront"}</data>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="b^q%b[P(9O?E*];1FcF9">
+<value name="KEY">
+<shadow type="text" id="b-9jGR:=#e?_vK}nOfFX">
+<field name="TEXT">RightFront Position</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="dcMotor_getProperty_Number" id="7)!`o_fB2Y~n?_3Q%lp]">
+<field name="IDENTIFIER">rightFrontAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"rightFront"}</data>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="{b=)Hgq_]S5w;^15c=Sb">
+<value name="KEY">
+<shadow type="text" id="S8+Fjb[M=iRC,i#jw_YX">
+<field name="TEXT">LeftRear</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number" id="B^jK^0BU{1!R|7t,qraS">
+<field name="NUM">123</field>
+</shadow>
+<block type="dcMotor_getProperty_Number" id="-R#7E_Of`e;a?n)X;l[d">
+<field name="IDENTIFIER">leftRearAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"leftRear"}</data>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="J4bY*~hasB5BLxFmD3hT">
+<value name="KEY">
+<shadow type="text" id="j%l8xFzUqHfk:ISxF1l:">
+<field name="TEXT">LeftRear Position</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="dcMotor_getProperty_Number" id="tZs]TLg(oXiJ2??=3$iJ">
+<field name="IDENTIFIER">leftRearAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"leftRear"}</data>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="AC?Gt;hG#ptKyXQEeuJP">
+<value name="KEY">
+<shadow type="text" id="R%H?8S*tD1xQ/-?j7q8`">
+<field name="TEXT">RightRear</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="dcMotor_getProperty_Number" id="EmR|WxesVsN{#FP+Q+?B">
+<field name="IDENTIFIER">rightRearAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"rightRear"}</data>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="t7XCvd12/mWY8`5*M,93">
+<value name="KEY">
+<shadow type="text" id="/AuLKZ/U:*N(;K(#jG@Y">
+<field name="TEXT">RightRear Position</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="dcMotor_getProperty_Number" id="oop7QtC0*_3JaIv;~.V@">
+<field name="IDENTIFIER">rightRearAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"rightRear"}</data>
+</block>
+</value>
+<next>
+<block type="comment" id="Jh/;L$n@JuX8AQJDFCul">
+<field name="COMMENT">Put loop blocks here.</field>
+<next>
+<block type="telemetry_update" id="exvivmft-pX$n!1,8Ea$"/>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+<next>
+<block type="comment" id="(rU-p_T_/B|vExcs}liL">
+<field name="COMMENT">Put run blocks here.</field>
+</block>
+</next>
+</block>
+</statement>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+</xml>
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<Extra>
+<OpModeMeta flavor="TELEOP" group="" autoTransition="" />
+<Enabled value="true" />
+</Extra>
